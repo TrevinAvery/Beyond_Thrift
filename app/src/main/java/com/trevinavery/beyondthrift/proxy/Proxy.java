@@ -68,6 +68,10 @@ public class Proxy {
         return null;
     }
 
+    public Donation[] getDonations() {
+        return null;
+    }
+
     /**
      * Logs an existing user in the server. If an error occurs,
      * the description of the error can be retrieved with <code>getMessage()</code>.
