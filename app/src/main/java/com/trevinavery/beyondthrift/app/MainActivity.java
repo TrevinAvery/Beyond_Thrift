@@ -120,6 +120,9 @@ public class MainActivity extends Activity {
             case 1:
                 fragment = new MyMapFragment();
                 break;
+            case 2:
+                fragment = new DonateFragment();
+                break;
             case 4:
                 fragment = onboardingFragment;
                 break;
