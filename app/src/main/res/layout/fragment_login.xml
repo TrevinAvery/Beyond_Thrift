@@ -7,39 +7,56 @@
     android:background="@android:color/background_light">
 
     <Button
+        android:id="@+id/signUpButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="Sign Up"/>
+
     <Button
+        android:id="@+id/loginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="Login"/>
-    
+
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <view
-            android:layout_width="5dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <View
+            android:layout_width="50dp"
             android:layout_height="1dp"
-            android:solidColor="@color/blue"/>
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
             android:text="or"/>
-        <view
-            android:layout_width="5dp"
-            android:layout_height="1dp"/>
+        <View
+            android:layout_width="50dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray"/>
     </LinearLayout>
 
     <Button
+        android:id="@+id/facebookLoginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign Up"/>
+        android:layout_gravity="center"
+        android:text="Sign Up with Facebook"/>
+
     <Button
+        android:id="@+id/googleLoginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign Up"/>
+        android:layout_gravity="center"
+        android:text="Sign Up with Google"/>
 
 
 </LinearLayout>
