@@ -2,10 +2,12 @@ package com.trevinavery.beyondthrift.app;
 
 import android.app.Fragment;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,6 +22,8 @@ import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
 
+import com.facebook.GraphRequest;
+import com.facebook.GraphResponse;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 import com.trevinavery.beyondthrift.R;
@@ -35,12 +39,17 @@ import com.trevinavery.beyondthrift.result.IResult;
 import com.trevinavery.beyondthrift.result.PersonResult;
 import com.trevinavery.beyondthrift.result.RegisterResult;
 
+import org.json.JSONObject;
+
+import static android.content.Context.MODE_PRIVATE;
+
 /**
  * This fragment allows the user to register for a new account,
  * or login with an existing account. It handles the proxy connection
  * and loads any data received to the model.
  */
 public class LoginFragment extends Fragment {
+    private String BEYOND_THRIFT_DB = "beyondThriftDb";
 
     private OnLoginListener onLoginListener;
     CallbackManager callbackManager;
@@ -91,15 +100,35 @@ public class LoginFragment extends Fragment {
         // Callback registration
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
-            public void onSuccess(LoginResult loginResult) {
+            public void onSuccess(final LoginResult loginResult) {
                 // App code
-                info.setText(
-                        "User ID: "
-                                + loginResult.getAccessToken().getUserId()
-                                + "\n" +
-                                "Auth Token: "
-                                + loginResult.getAccessToken().getToken()
-                );
+
+
+                GraphRequest request = GraphRequest.newMeRequest(
+                        loginResult.getAccessToken(),
+                        new GraphRequest.GraphJSONObjectCallback() {
+                            @Override
+                            public void onCompleted(
+                                    JSONObject object,
+                                    GraphResponse response) {
+                                // Application code
+
+                                try{
+                                    SharedPreferences.Editor editor = getActivity().getSharedPreferences(BEYOND_THRIFT_DB, MODE_PRIVATE).edit();
+                                    editor.putString("user_email", object.getString("email"));
+                                    editor.commit();
+                                }
+                                catch(Exception JSONException ){
+                                    Log.v("facebook error","error getting facebook email");
+                                }
+
+                            }
+                        });
+                Bundle parameters = new Bundle();
+                parameters.putString("fields", "id,name,link,email");
+                request.setParameters(parameters);
+                request.executeAsync();
+
             }
 
             @Override

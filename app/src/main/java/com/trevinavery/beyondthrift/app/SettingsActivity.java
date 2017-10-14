@@ -39,7 +39,9 @@ public class SettingsActivity extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_settings);
+        setUpUserInformation();
         setSavedDropDownButtons();
         setSavedSwitchesStates();
         setUpSwitchListeners();
@@ -69,6 +71,20 @@ public class SettingsActivity extends Activity {
         switchState = prefs.getBoolean("notifications_switch", true);
         Switch notificationsSwitch = (Switch) findViewById(R.id.id_notifications_switch);
         notificationsSwitch.setChecked(switchState);
+    }
+
+    private void setUpUserInformation(){
+        SharedPreferences prefs = getSharedPreferences(BEYOND_THRIFT_DB, MODE_PRIVATE);
+        //address buttons
+        TextView emailAddressTextView = (TextView) findViewById(R.id.id_user_email_address);
+        emailAddressTextView.setText(prefs.getString("user_email","No email"));
+        emailAddressTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //pop up dialog to change address
+
+            }
+        });
     }
 
     private void setUpSwitchListeners(){
