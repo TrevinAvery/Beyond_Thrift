@@ -14,6 +14,7 @@ import java.net.SocketTimeoutException;
 import java.net.URL;
 
 import com.trevinavery.beyondthrift.model.Donation;
+import com.trevinavery.beyondthrift.model.DonationData;
 import com.trevinavery.beyondthrift.request.LoginRequest;
 import com.trevinavery.beyondthrift.request.RegisterRequest;
 import com.trevinavery.beyondthrift.result.DonationResult;
@@ -68,8 +69,17 @@ public class Proxy {
         return null;
     }
 
-    public Donation[] getDonations() {
-        return null;
+    public DonationData getDonations() {
+
+        Gson gson = new Gson();
+
+        InputStreamReader resultStr = post("/pickup.php", "");
+
+        if (resultStr == null) {
+            return null;
+        }
+
+        return gson.fromJson(resultStr, DonationData.class);
     }
 
     /**
