@@ -1,27 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="96c866b3-121b-45af-8133-e87638430d5e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/IntelliLang.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_mac/git.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_mac/keymap.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_mac/laf.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/androidStudioFirstRun.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/debugger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/diff.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/editor.codeinsight.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gradle.run.settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ide.general.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/inspection/Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jdk.table.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project.default.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ui.lnf.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-browsers.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/beyond_thrift_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/trevinavery.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/trevinavery/beyondthrift/app/OnboardingFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_onboarding.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/logs/log.txt.lck" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/trevinavery/familymap/ExampleInstrumentedTest.java" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/trevinavery/beyondthrift/ExampleInstrumentedTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/trevinavery/familymap/app/FilterActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/trevinavery/beyondthrift/app/FilterActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/trevinavery/familymap/app/LoginFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/trevinavery/beyondthrift/app/LoginFragment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/trevinavery/familymap/app/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/trevinavery/beyondthrift/app/MainActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/trevinavery/familymap/app/MapActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/trevinavery/beyondthrift/app/MapActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/trevinavery/familymap/app/MyMapFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/trevinavery/beyondthrift/app/MyMapFragment.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/trevinavery/familymap/app/PersonActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/trevinavery/beyondthrift/app/PersonActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/trevinavery/familymap/app/SearchActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/trevinavery/beyondthrift/app/SearchActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/trevinavery/familymap/app/SettingsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/trevinavery/beyondthrift/app/SettingsActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/trevinavery/familymap/model/Family.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/trevinavery/beyondthrift/model/Family.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/trevinavery/familymap/model/Model.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/trevinavery/beyondthrift/model/Model.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/trevinavery/familymap/proxy/Proxy.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/trevinavery/beyondthrift/proxy/Proxy.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/test/java/com/trevinavery/familymap/model/ModelTest.java" afterPath="$PROJECT_DIR$/app/src/test/java/com/trevinavery/beyondthrift/model/ModelTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/test/java/com/trevinavery/familymap/proxy/ProxyTest.java" afterPath="$PROJECT_DIR$/app/src/test/java/com/trevinavery/beyondthrift/proxy/ProxyTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/dao/AbstractDao.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/dao/AbstractDao.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/dao/AuthTokenDao.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/dao/AuthTokenDao.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/dao/Database.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/dao/Database.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/dao/DatabaseException.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/dao/DatabaseException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/dao/EventDao.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/dao/EventDao.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/dao/InvalidValuesException.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/dao/InvalidValuesException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/dao/PersonDao.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/dao/PersonDao.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/dao/UserAlreadyExistsException.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/dao/UserAlreadyExistsException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/dao/UserDao.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/dao/UserDao.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/handler/AbstractHandler.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/handler/AbstractHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/handler/ClearHandler.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/handler/ClearHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/handler/DefaultHandler.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/handler/DefaultHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/handler/EventHandler.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/handler/EventHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/handler/FillHandler.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/handler/FillHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/handler/LoadHandler.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/handler/LoadHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/handler/LoginHandler.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/handler/LoginHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/handler/PersonHandler.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/handler/PersonHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/handler/RegisterHandler.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/handler/RegisterHandler.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/server/Server.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/server/Server.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/service/AbstractService.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/service/AbstractService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/service/ClearService.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/service/ClearService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/service/EventService.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/service/EventService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/service/FillService.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/service/FillService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/service/LoadService.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/service/LoadService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/service/LoginService.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/service/LoginService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/service/PersonService.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/service/PersonService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/service/RegisterService.java" afterPath="$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/service/RegisterService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/test/java/com/trevinavery/familymap/TestDriver.java" afterPath="$PROJECT_DIR$/server/src/test/java/com/trevinavery/beyondthrift/TestDriver.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/test/java/com/trevinavery/familymap/dao/AuthTokenDaoTest.java" afterPath="$PROJECT_DIR$/server/src/test/java/com/trevinavery/beyondthrift/dao/AuthTokenDaoTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/test/java/com/trevinavery/familymap/dao/EventDaoTest.java" afterPath="$PROJECT_DIR$/server/src/test/java/com/trevinavery/beyondthrift/dao/EventDaoTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/test/java/com/trevinavery/familymap/dao/PersonDaoTest.java" afterPath="$PROJECT_DIR$/server/src/test/java/com/trevinavery/beyondthrift/dao/PersonDaoTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/test/java/com/trevinavery/familymap/dao/UserDaoTest.java" afterPath="$PROJECT_DIR$/server/src/test/java/com/trevinavery/beyondthrift/dao/UserDaoTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/test/java/com/trevinavery/familymap/service/ClearServiceTest.java" afterPath="$PROJECT_DIR$/server/src/test/java/com/trevinavery/beyondthrift/service/ClearServiceTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/test/java/com/trevinavery/familymap/service/EventServiceTest.java" afterPath="$PROJECT_DIR$/server/src/test/java/com/trevinavery/beyondthrift/service/EventServiceTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/test/java/com/trevinavery/familymap/service/FillServiceTest.java" afterPath="$PROJECT_DIR$/server/src/test/java/com/trevinavery/beyondthrift/service/FillServiceTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/test/java/com/trevinavery/familymap/service/LoadServiceTest.java" afterPath="$PROJECT_DIR$/server/src/test/java/com/trevinavery/beyondthrift/service/LoadServiceTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/test/java/com/trevinavery/familymap/service/LoginServiceTest.java" afterPath="$PROJECT_DIR$/server/src/test/java/com/trevinavery/beyondthrift/service/LoginServiceTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/test/java/com/trevinavery/familymap/service/PersonServiceTest.java" afterPath="$PROJECT_DIR$/server/src/test/java/com/trevinavery/beyondthrift/service/PersonServiceTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/src/test/java/com/trevinavery/familymap/service/RegisterServiceTest.java" afterPath="$PROJECT_DIR$/server/src/test/java/com/trevinavery/beyondthrift/service/RegisterServiceTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/familymap/model/AuthToken.java" afterPath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/beyondthrift/model/AuthToken.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/familymap/model/Event.java" afterPath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/beyondthrift/model/Event.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/familymap/model/Location.java" afterPath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/beyondthrift/model/Location.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/familymap/model/LocationData.java" afterPath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/beyondthrift/model/LocationData.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/familymap/model/NameData.java" afterPath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/beyondthrift/model/NameData.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/familymap/model/Person.java" afterPath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/beyondthrift/model/Person.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/familymap/model/User.java" afterPath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/beyondthrift/model/User.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/familymap/request/ClearRequest.java" afterPath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/beyondthrift/request/ClearRequest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/familymap/request/EventRequest.java" afterPath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/beyondthrift/request/EventRequest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/familymap/request/FillRequest.java" afterPath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/beyondthrift/request/FillRequest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/familymap/request/IRequest.java" afterPath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/beyondthrift/request/IRequest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/familymap/request/LoadRequest.java" afterPath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/beyondthrift/request/LoadRequest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/familymap/request/LoginRequest.java" afterPath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/beyondthrift/request/LoginRequest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/familymap/request/PersonRequest.java" afterPath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/beyondthrift/request/PersonRequest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/familymap/request/RegisterRequest.java" afterPath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/beyondthrift/request/RegisterRequest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/familymap/result/ClearResult.java" afterPath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/beyondthrift/result/ClearResult.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/familymap/result/EventResult.java" afterPath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/beyondthrift/result/EventResult.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/familymap/result/FillResult.java" afterPath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/beyondthrift/result/FillResult.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/familymap/result/IResult.java" afterPath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/beyondthrift/result/IResult.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/familymap/result/LoadResult.java" afterPath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/beyondthrift/result/LoadResult.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/familymap/result/LoginResult.java" afterPath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/beyondthrift/result/LoginResult.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/familymap/result/PersonResult.java" afterPath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/beyondthrift/result/PersonResult.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/familymap/result/RegisterResult.java" afterPath="$PROJECT_DIR$/shared/src/main/java/com/trevinavery/beyondthrift/result/RegisterResult.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/db/database.sqlite" afterPath="$PROJECT_DIR$/server/db/database.sqlite" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Beyond_Thrift.iml" afterPath="$PROJECT_DIR$/Beyond_Thrift.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_person.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_person.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_search.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_search.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_map.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_map.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/logs/log.txt" afterPath="$PROJECT_DIR$/server/logs/log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/logs/log.txt.1" afterPath="$PROJECT_DIR$/server/logs/log.txt.1" />
     </list>
     <ignored path="Beyond_Thrift.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,12 +125,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Server.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/server/Server.java">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/trevinavery/beyondthrift/app/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+            <state relative-caret-position="555">
+              <caret line="52" column="38" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
+              <folding>
+                <element signature="e#1059#1542#0" expanded="true" />
+                <element signature="e#1541#1542#0" expanded="true" />
+                <element signature="e#1640#2108#0" expanded="true" />
+                <element signature="e#2107#2108#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/trevinavery/beyondthrift/app/LoginFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment_login.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OnboardingFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/trevinavery/beyondthrift/app/OnboardingFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <folding>
+                <element signature="e#2177#2423#0" expanded="true" />
+                <element signature="e#2422#2423#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -2413,6 +2532,19 @@
       <projects_view />
     </option>
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/src/main/java/com/trevinavery/familymap/app/OnboardingFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/trevinavery/beyondthrift/app/OnboardingFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_onboarding.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/trevinavery/beyondthrift/app/LoginFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/trevinavery/beyondthrift/app/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="width" value="1440" />
     <option name="height" value="900" />
@@ -2424,7 +2556,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -2473,7 +2605,227 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Beyond_Thrift" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Beyond_Thrift" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Beyond_Thrift" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Beyond_Thrift" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Beyond_Thrift" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Beyond_Thrift" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Beyond_Thrift" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Beyond_Thrift" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Beyond_Thrift" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Beyond_Thrift" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Beyond_Thrift" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Beyond_Thrift" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Beyond_Thrift" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Beyond_Thrift" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beyondthrift" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Beyond_Thrift" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Beyond_Thrift" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beyondthrift" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2495,6 +2847,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="device.picker.selection" value="Nexus_5X_API_25" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.trevinavery.familymap.app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
+    </key>
   </component>
   <component name="RunManager" selected="Android App.app">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -2734,16 +3096,7 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="Server" type="JarApplication" factoryName="JAR Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="PROGRAM_PARAMETERS" value="3000 3600" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/server" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration default="false" name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="app" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -2792,9 +3145,39 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="JAR Application.Server" />
-      <item index="1" class="java.lang.String" itemvalue="Android App.app" />
+    <configuration default="false" name="Server" type="Application" factoryName="Application" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.trevinavery.beyondthrift.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.trevinavery.beyondthrift.server.Server" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="1234 3600" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/server" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="server" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Server" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="PROGRAM_PARAMETERS" value="3000 3600" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/server" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Android App.app" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Server" />
+      <item index="2" class="java.lang.String" itemvalue="JAR Application.Server" />
     </list>
     <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
@@ -2826,6 +3209,21 @@
       <option name="presentableId" value="Default" />
       <updated>1507943474251</updated>
     </task>
+    <task id="LOCAL-00001" summary="Change">
+      <created>1507946251232</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1507946251232</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Change">
+      <created>1507946337268</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1507946337268</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2833,19 +3231,21 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31066823" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2532189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24583334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2857,7 +3257,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2872,12 +3271,16 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Change" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/server/Server.java">
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1665">
           <caret line="134" column="7" selection-start-line="134" selection-start-column="7" selection-end-line="134" selection-end-column="7" />
@@ -2893,12 +3296,134 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/trevinavery/familymap/server/Server.java">
+    <entry file="file://$PROJECT_DIR$/server/db/database.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/java/com/trevinavery/beyondthrift/dao/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/trevinavery/beyondthrift/app/MyMapFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_map.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_onboarding.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+          <folding>
+            <element signature="e#751#776#0" expanded="true" />
+            <element signature="e#1112#1140#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/trevinavery/beyondthrift/app/OnboardingFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="e#2177#2423#0" expanded="true" />
+            <element signature="e#2422#2423#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_map.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="9" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/trevinavery/beyondthrift/app/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="52" column="38" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
+          <folding>
+            <element signature="e#1059#1542#0" expanded="true" />
+            <element signature="e#1541#1542#0" expanded="true" />
+            <element signature="e#1640#2108#0" expanded="true" />
+            <element signature="e#2107#2108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/trevinavery/beyondthrift/app/LoginFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
   </component>

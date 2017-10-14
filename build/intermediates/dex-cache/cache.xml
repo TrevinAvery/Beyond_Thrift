@@ -2,13 +2,166 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="E:\FamilyMap\shared\build\libs\shared.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/trevinavery/.android/build-cache/ce5cdca54351e0b43de0d2e7eb211a27bf59fda9/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="dc60a2eed786e33ad97714809a3f9bf3fb57d456">
-        <dex dex="E:\FamilyMap\app\build\intermediates\pre-dexed\debug\shared_75fdc5eb4f134285cd1418f1e7d3f159f9279470.jar" />
+        sha1="3f0a85e6000998ac322ddd50750e8cf91601a84b">
+        <dex dex="/Users/trevinavery/Workspace/AndroidStudioProjects/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a5246e994bb2c47d5b06e594247ab5d0848df2b3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/trevinavery/.android/build-cache/7d32384465d269e1f0676f070271ff38263ff949/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/trevinavery/Workspace/AndroidStudioProjects/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5f521bb253ef4ad2cf2923d544184da566d7233c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/trevinavery/.android/build-cache/70221987e8cb920199b7b7f78169e346b30ccd53/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/trevinavery/Workspace/AndroidStudioProjects/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e2967944091c4190cb2eb50997de85f19d9ec56b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/trevinavery/Workspace/AndroidStudioProjects/Beyond_Thrift/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/trevinavery/Workspace/AndroidStudioProjects/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_a3484a8ea1cfb09bce093258ead23fbe6a2a21a4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/trevinavery/.android/build-cache/9f73d5977a40d00ab30487eca31646115e8e8b0e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0c6924cbba8248329a8c58ead6a380efe7eee76e">
+        <dex dex="/Users/trevinavery/Workspace/AndroidStudioProjects/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_69010b75c304b8abee58333b6dcf3dc7e4669875/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/trevinavery/.android/build-cache/d5c2d8f0f9576fe7218784d6d4989551c8a0e82d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="69e74a8b1cbf5b8ee0fc0cca6bab1ac6c45efef8">
+        <dex dex="/Users/trevinavery/Workspace/AndroidStudioProjects/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_84a5196c32c6f5c36b9c689fa8649268f6a80652/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/trevinavery/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/trevinavery/Workspace/AndroidStudioProjects/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_591832ffaa9a365ecf7700482497ac702d692ccb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/trevinavery/.android/build-cache/83f493cb9e35de8ed5b2e83915ce6dd82d924de9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/trevinavery/Workspace/AndroidStudioProjects/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6e96b09379780390f57d0076f7de71d1aada05a4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/trevinavery/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.1/2a8e0aa38a2e21cb39e2f5a7d6704cbdc941da0/gson-2.8.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="02a8e0aa38a2e21cb39e2f5a7d6704cbdc941da0">
+        <dex dex="/Users/trevinavery/Workspace/AndroidStudioProjects/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.8.1_cef620b3cdcb2f72eaacfd33c123c0fa5ac41e40/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/trevinavery/.android/build-cache/6d8ee7d4e23a0f758aae71a2fc32205d91be2eaa/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="900a290779cdb4eb2e63b6f7806fd9f30ce4f60d">
+        <dex dex="/Users/trevinavery/Workspace/AndroidStudioProjects/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_90f9c2ca9282795b91c6f1a4d5106268395a96f4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/trevinavery/.android/build-cache/ca4ed0f22005cc103d2fd9bffad29408c3642772/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/trevinavery/Workspace/AndroidStudioProjects/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_667f9c9c4531f712bc74d3e55c5950da0e75a5b7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/trevinavery/.android/build-cache/c4cfdcfbf1c21801aa55a749fcd99fa294c452f9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/trevinavery/Workspace/AndroidStudioProjects/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_87e2bb95bc142844682926afb0d3d70302d29ac3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/trevinavery/.android/build-cache/b81dd0b3891353c3208f2341c9f58d06f93508d1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/Users/trevinavery/Workspace/AndroidStudioProjects/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_cf1ee64d038e90d8c7bdc2c6753fd9ac72586d2d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/trevinavery/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/trevinavery/Workspace/AndroidStudioProjects/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_d77e6af964593602f10db1153841708433054e38/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/trevinavery/.android/build-cache/bb8f6052be9b2279b0fc37f6fcd84007c37343fc/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a8dc46a8903beb5932a24fbd6a443521cc8574bb">
+        <dex dex="/Users/trevinavery/Workspace/AndroidStudioProjects/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fb02b72239f479c198884efa2b43fb27ec8d7a9e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/trevinavery/.android/build-cache/32a94879ade8274a220913758addf23f74af2b5b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/trevinavery/Workspace/AndroidStudioProjects/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3aebd214b20a99ac527dddde19155ef0968ec99b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/trevinavery/.android/build-cache/78bf0e0fb3b5771efb73b1fab7cedde1d347b4d5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/trevinavery/Workspace/AndroidStudioProjects/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0a01be5a55ad9d6b9e62f143d7b9535c4bd321d0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/trevinavery/Workspace/AndroidStudioProjects/Beyond_Thrift/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8cebd33c5efd42daa0ac5e58634638876da35485">
+        <dex dex="/Users/trevinavery/Workspace/AndroidStudioProjects/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_b0ebfb16a42ac1cf94085d6aff1a586607601a23/classes.dex" />
     </item>
 
 </items>

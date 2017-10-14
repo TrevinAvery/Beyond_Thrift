@@ -12,6 +12,10 @@
 
     <!-- Main Activity Strings -->
 
+    <!-- OnboardingFragment Strings -->
+    <string name="onboarding_text">Make donations, provide service by picking up donations and find information about clothing drives all in one app</string>
+    <string name="button_get_started">Get Started</string>
+
     <!-- Action Item Labels -->
     <string name="action_search">Search</string>
     <string name="action_filter">Filter</string>
