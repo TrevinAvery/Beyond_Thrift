@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,6 +35,7 @@ import static android.app.Activity.RESULT_OK;
 public class DonatedItemsFragment extends Fragment {
     ArrayList<Object> searchResults = new ArrayList<>();
     View view;
+    Fragment frag;
 
     DonatedItemsAdapter adapter;
     public DonatedItemsFragment(){
@@ -48,8 +50,7 @@ public class DonatedItemsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-        new DonateItemListTask().execute();
+        frag = this;
 
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_donated_items, container, false);
@@ -57,6 +58,7 @@ public class DonatedItemsFragment extends Fragment {
         // Lookup the recyclerview in activity layout
 
 
+        new DonateItemListTask().execute();
 
 
         return view;
@@ -91,7 +93,18 @@ public class DonatedItemsFragment extends Fragment {
 
             Donation[] donations = data.getData();
 
-            searchResults.add(donations);
+            Log.v("test", "start");
+            for (Donation d : donations) {
+                Log.v("test", d.getDescription());
+                searchResults.add(d);
+            }
+
+
+            Log.v("test", "start2");
+            for (Object d : searchResults) {
+
+                Log.v("test", ((Donation)d).getDescription());
+            }
             return null;
         }
 
@@ -102,7 +115,7 @@ public class DonatedItemsFragment extends Fragment {
             RecyclerView rvSearch = (RecyclerView) view.findViewById(R.id.donated_items_list);
 
 
-            final LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
+            final LinearLayoutManager layoutManager = new LinearLayoutManager(frag.getActivity());
             //layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
             rvSearch.setLayoutManager(layoutManager);
 
@@ -113,7 +126,7 @@ public class DonatedItemsFragment extends Fragment {
             rvSearch.setAdapter(adapter);
 
             // Set layout manager to position the items
-            rvSearch.setLayoutManager(new LinearLayoutManager(getActivity()));
+            rvSearch.setLayoutManager(new LinearLayoutManager(frag.getActivity()));
         }
     }
 }
