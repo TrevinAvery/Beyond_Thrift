@@ -58,6 +58,11 @@ public class MyMapFragment extends Fragment implements OnMapReadyCallback {
         // Required default constructor
     }
 
+    private String[][] locations = {
+            {"28.20893", "29.6426", "address"},
+            {"28.20833", "43.0983", "address2"}
+    };
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -171,21 +176,20 @@ public class MyMapFragment extends Fragment implements OnMapReadyCallback {
 
         Marker selectedMarker = null;
 
-        for (Event event : events) {
-            pos = new LatLng(event.getLatitude(), event.getLongitude());
+        for (String[] location : locations) {
+            pos = new LatLng(Double.parseDouble(location[0]), Double.parseDouble(location[1]));
             marker = googleMap.addMarker(new MarkerOptions().position(pos)
                     .icon(BitmapDescriptorFactory
-                            .defaultMarker(Model.getEventTypeColor(event.getEventType())))
-            );
-            markerMap.put(marker.getId(), event);
+                            .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+//            markerMap.put(marker.getId(), event);
 
             // save the marker for the selected event
-            if (eventID != null && eventID.equals(event.getEventID())) {
-                selectedMarker = marker;
-            }
+//            if (eventID != null && eventID.equals(event.getEventID())) {
+//                selectedMarker = marker;
+//            }
         }
 
-        updateMapSelection(selectedMarker, doScroll);
+//        updateMapSelection(selectedMarker, doScroll);
     }
 
     /**
@@ -204,7 +208,7 @@ public class MyMapFragment extends Fragment implements OnMapReadyCallback {
             Event event = markerMap.get(marker.getId());
             eventID = event.getEventID();
 
-            drawLines(event);
+//            drawLines(event);
 
             final String personID = event.getPersonID();
             Person person = Model.getPerson(personID);
@@ -236,7 +240,7 @@ public class MyMapFragment extends Fragment implements OnMapReadyCallback {
         } else {
             // no marker selected, clear event info
             eventID = null;
-            drawLines(null);
+//            drawLines(null);
             icon.setVisibility(View.GONE);
             title.setText(R.string.prompt_click_marker);
             title.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
@@ -244,184 +248,184 @@ public class MyMapFragment extends Fragment implements OnMapReadyCallback {
             eventInfo.setOnClickListener(null);
         }
     }
-
-    /**
-     * Draws all enabled lines.
-     *
-     * @param rootEvent the event to draw all lines from
-     */
-    private void drawLines(Event rootEvent) {
-
-        // remove old lines
-        for (Polyline line : polylines) {
-            line.remove();
-        }
-
-        // if no event, don't draw any lines
-        if (rootEvent == null) {
-            return;
-        }
-
-        if (Model.getLineSwitch(Model.LINE_COLOR_LIFE_STORY)) {
-            drawLifeStoryLines(rootEvent);
-        }
-
-        if (Model.getLineSwitch(Model.LINE_COLOR_FAMILY_TREE)) {
-            drawFamilyTreeLines(rootEvent);
-        }
-
-        if (Model.getLineSwitch(Model.LINE_COLOR_SPOUSE)) {
-            drawSpouseLines(rootEvent);
-        }
-    }
-
-    /**
-     * Draw life story lines in chronological order.
-     *
-     * @param rootEvent an event in the life story to connect
-     */
-    private void drawLifeStoryLines(Event rootEvent) {
-
-        int width = 25;
-
-        Set<Event> personEvents = Model.getFilteredEvents(rootEvent.getPersonID());
-
-        Event lastEvent = null;
-        for (Event event : personEvents) {
-            // skip first event
-            if (lastEvent != null) {
-
-                LatLng lastLatLng = new LatLng(
-                        lastEvent.getLatitude(), lastEvent.getLongitude());
-                LatLng thisLatLng = new LatLng(
-                        event.getLatitude(), event.getLongitude());
-
-                PolylineOptions options = new PolylineOptions()
-                        .add(lastLatLng, thisLatLng)
-                        .width(width)
-                        .color(getResources().getColor(
-                                Model.getLineColorResource(Model.LINE_COLOR_LIFE_STORY), null));
-
-                polylines.add(googleMap.addPolyline(options));
-            }
-            lastEvent = event;
-        }
-    }
-
-    /**
-     * Draws lines connecting the rootEvent to earliest event for each parent
-     * of the person associated with the rootEvent. This continues recursively
-     * through grandparent and great-grandparents and so on until there are no
-     * more connections. Each generation, the lines get progressively thinner.
-     *
-     * @param rootEvent the event to draw all the lines from
-     */
-    private void drawFamilyTreeLines(Event rootEvent) {
-
-        int width = 25;
-
-        Set<Event> generation = new TreeSet<>();
-        generation.add(rootEvent);
-
-        Set<Event> nextGeneration = new TreeSet<>();
-
-        Person person;
-        LatLng personLatLng;
-        Event parentEvent;
-
-        while (generation.size() > 0) {
-
-            for (Event personEvent : generation) {
-
-                person = Model.getPerson(personEvent.getPersonID());
-
-                personLatLng = new LatLng(
-                        personEvent.getLatitude(), personEvent.getLongitude());
-
-                parentEvent = drawParentLine(person.getFather(), personLatLng, width);
-
-                if (parentEvent != null) {
-                    nextGeneration.add(parentEvent);
-                }
-
-                parentEvent = drawParentLine(person.getMother(), personLatLng, width);
-
-                if (parentEvent != null) {
-                    nextGeneration.add(parentEvent);
-                }
-            }
-
-            generation = nextGeneration;
-            nextGeneration = new TreeSet<>();
-
-            // decrease width of line
-            width = width - 8;
-            if (width < 1) {
-                width = 1;
-            }
-        }
-
-    }
-
-    /**
-     * Draws a line from a location to the earliest event of the person associated
-     * with parentID. This is a helper method for {@link #drawFamilyTreeLines(Event)}.
-     *
-     * @param parentID the id of the person to draw a line to
-     * @param personLatLng the starting point of the line
-     * @param width the width of the line to be drawn
-     * @return the earliest event of the person associated with parentID
-     */
-    private Event drawParentLine(String parentID, LatLng personLatLng, int width) {
-
-        Set<Event> parentEvents = Model.getFilteredEvents(parentID);
-
-        if (parentEvents != null && parentEvents.size() > 0) {
-            Event parentEvent = parentEvents.iterator().next();
-            LatLng parentLatLng = new LatLng(
-                    parentEvent.getLatitude(), parentEvent.getLongitude());
-
-            PolylineOptions options = new PolylineOptions()
-                    .add(personLatLng, parentLatLng)
-                    .width(width)
-                    .color(getResources().getColor(
-                            Model.getLineColorResource(Model.LINE_COLOR_FAMILY_TREE), null));
-
-            polylines.add(googleMap.addPolyline(options));
-            return parentEvent;
-        }
-        return null;
-    }
-
-    /**
-     * Draws a line connecting the rootEvent to the earliest event of the
-     * spouse of the person associated with the rootEvent.
-     *
-     * @param rootEvent the event to connect with the spouse of the person
-     *                  associated with the event
-     */
-    private void drawSpouseLines(Event rootEvent) {
-
-        int width = 25;
-
-        Person person = Model.getPerson(rootEvent.getPersonID());
-
-        Set<Event> spouseEvents = Model.getFilteredEvents(person.getSpouse());
-
-        if (spouseEvents != null && spouseEvents.size() > 0) {
-            Event spouseEvent = spouseEvents.iterator().next();
-            LatLng spouseLatLng = new LatLng(
-                    spouseEvent.getLatitude(), spouseEvent.getLongitude());
-            LatLng personLatLng = new LatLng(
-                    rootEvent.getLatitude(), rootEvent.getLongitude());
-
-            PolylineOptions options = new PolylineOptions()
-                    .add(personLatLng, spouseLatLng)
-                    .width(width)
-                    .color(getResources().getColor(
-                            Model.getLineColorResource(Model.LINE_COLOR_SPOUSE), null));
-
-            polylines.add(googleMap.addPolyline(options));
-        }
-    }
+//
+//    /**
+//     * Draws all enabled lines.
+//     *
+//     * @param rootEvent the event to draw all lines from
+//     */
+//    private void drawLines(Event rootEvent) {
+//
+//        // remove old lines
+//        for (Polyline line : polylines) {
+//            line.remove();
+//        }
+//
+//        // if no event, don't draw any lines
+//        if (rootEvent == null) {
+//            return;
+//        }
+//
+//        if (Model.getLineSwitch(Model.LINE_COLOR_LIFE_STORY)) {
+//            drawLifeStoryLines(rootEvent);
+//        }
+//
+//        if (Model.getLineSwitch(Model.LINE_COLOR_FAMILY_TREE)) {
+//            drawFamilyTreeLines(rootEvent);
+//        }
+//
+//        if (Model.getLineSwitch(Model.LINE_COLOR_SPOUSE)) {
+//            drawSpouseLines(rootEvent);
+//        }
+//    }
+//
+//    /**
+//     * Draw life story lines in chronological order.
+//     *
+//     * @param rootEvent an event in the life story to connect
+//     */
+//    private void drawLifeStoryLines(Event rootEvent) {
+//
+//        int width = 25;
+//
+//        Set<Event> personEvents = Model.getFilteredEvents(rootEvent.getPersonID());
+//
+//        Event lastEvent = null;
+//        for (Event event : personEvents) {
+//            // skip first event
+//            if (lastEvent != null) {
+//
+//                LatLng lastLatLng = new LatLng(
+//                        lastEvent.getLatitude(), lastEvent.getLongitude());
+//                LatLng thisLatLng = new LatLng(
+//                        event.getLatitude(), event.getLongitude());
+//
+//                PolylineOptions options = new PolylineOptions()
+//                        .add(lastLatLng, thisLatLng)
+//                        .width(width)
+//                        .color(getResources().getColor(
+//                                Model.getLineColorResource(Model.LINE_COLOR_LIFE_STORY), null));
+//
+//                polylines.add(googleMap.addPolyline(options));
+//            }
+//            lastEvent = event;
+//        }
+//    }
+//
+//    /**
+//     * Draws lines connecting the rootEvent to earliest event for each parent
+//     * of the person associated with the rootEvent. This continues recursively
+//     * through grandparent and great-grandparents and so on until there are no
+//     * more connections. Each generation, the lines get progressively thinner.
+//     *
+//     * @param rootEvent the event to draw all the lines from
+//     */
+//    private void drawFamilyTreeLines(Event rootEvent) {
+//
+//        int width = 25;
+//
+//        Set<Event> generation = new TreeSet<>();
+//        generation.add(rootEvent);
+//
+//        Set<Event> nextGeneration = new TreeSet<>();
+//
+//        Person person;
+//        LatLng personLatLng;
+//        Event parentEvent;
+//
+//        while (generation.size() > 0) {
+//
+//            for (Event personEvent : generation) {
+//
+//                person = Model.getPerson(personEvent.getPersonID());
+//
+//                personLatLng = new LatLng(
+//                        personEvent.getLatitude(), personEvent.getLongitude());
+//
+//                parentEvent = drawParentLine(person.getFather(), personLatLng, width);
+//
+//                if (parentEvent != null) {
+//                    nextGeneration.add(parentEvent);
+//                }
+//
+//                parentEvent = drawParentLine(person.getMother(), personLatLng, width);
+//
+//                if (parentEvent != null) {
+//                    nextGeneration.add(parentEvent);
+//                }
+//            }
+//
+//            generation = nextGeneration;
+//            nextGeneration = new TreeSet<>();
+//
+//            // decrease width of line
+//            width = width - 8;
+//            if (width < 1) {
+//                width = 1;
+//            }
+//        }
+//
+//    }
+//
+//    /**
+//     * Draws a line from a location to the earliest event of the person associated
+//     * with parentID. This is a helper method for {@link #drawFamilyTreeLines(Event)}.
+//     *
+//     * @param parentID the id of the person to draw a line to
+//     * @param personLatLng the starting point of the line
+//     * @param width the width of the line to be drawn
+//     * @return the earliest event of the person associated with parentID
+//     */
+//    private Event drawParentLine(String parentID, LatLng personLatLng, int width) {
+//
+//        Set<Event> parentEvents = Model.getFilteredEvents(parentID);
+//
+//        if (parentEvents != null && parentEvents.size() > 0) {
+//            Event parentEvent = parentEvents.iterator().next();
+//            LatLng parentLatLng = new LatLng(
+//                    parentEvent.getLatitude(), parentEvent.getLongitude());
+//
+//            PolylineOptions options = new PolylineOptions()
+//                    .add(personLatLng, parentLatLng)
+//                    .width(width)
+//                    .color(getResources().getColor(
+//                            Model.getLineColorResource(Model.LINE_COLOR_FAMILY_TREE), null));
+//
+//            polylines.add(googleMap.addPolyline(options));
+//            return parentEvent;
+//        }
+//        return null;
+//    }
+//
+//    /**
+//     * Draws a line connecting the rootEvent to the earliest event of the
+//     * spouse of the person associated with the rootEvent.
+//     *
+//     * @param rootEvent the event to connect with the spouse of the person
+//     *                  associated with the event
+//     */
+//    private void drawSpouseLines(Event rootEvent) {
+//
+//        int width = 25;
+//
+//        Person person = Model.getPerson(rootEvent.getPersonID());
+//
+//        Set<Event> spouseEvents = Model.getFilteredEvents(person.getSpouse());
+//
+//        if (spouseEvents != null && spouseEvents.size() > 0) {
+//            Event spouseEvent = spouseEvents.iterator().next();
+//            LatLng spouseLatLng = new LatLng(
+//                    spouseEvent.getLatitude(), spouseEvent.getLongitude());
+//            LatLng personLatLng = new LatLng(
+//                    rootEvent.getLatitude(), rootEvent.getLongitude());
+//
+//            PolylineOptions options = new PolylineOptions()
+//                    .add(personLatLng, spouseLatLng)
+//                    .width(width)
+//                    .color(getResources().getColor(
+//                            Model.getLineColorResource(Model.LINE_COLOR_SPOUSE), null));
+//
+//            polylines.add(googleMap.addPolyline(options));
+//        }
+//    }
 }

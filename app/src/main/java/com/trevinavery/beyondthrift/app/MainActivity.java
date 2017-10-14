@@ -113,10 +113,16 @@ public class MainActivity extends Activity {
 
         switch (position) {
             case 0:
-                fragment = new MyMapFragment();
+                fragment = new MainFragment();
                 break;
             case 1:
-                fragment = new LoginFragment();
+                fragment = new MyMapFragment();
+                break;
+            case 4:
+                fragment = onboardingFragment;
+                break;
+            case 5:
+                fragment = loginFragment;
                 break;
             case 6:
                 intent = new Intent(this, SettingsActivity.class);
@@ -147,7 +153,7 @@ public class MainActivity extends Activity {
     public void setTitle(CharSequence title) {
 //        mTitle = title;
 //        getActionBar().setTitle(mTitle);
-        getActionBar().setTitle(title);
+//        getActionBar().setTitle(title);
     }
 
 }
