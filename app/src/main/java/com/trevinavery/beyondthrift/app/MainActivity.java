@@ -118,7 +118,7 @@ public class MainActivity extends Activity {
             case 1:
                 fragment = new LoginFragment();
                 break;
-            case 4:
+            case 6:
                 intent = new Intent(this, SettingsActivity.class);
                 break;
             default:
