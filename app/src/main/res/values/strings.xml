@@ -143,5 +143,9 @@
     <string name="icon_gender">Gender Icon</string>
     <string name="icon_gender_or_map">Gender or Map Icon</string>
 
+    <!-- facebook -->
+    <string name="facebook_app_id">133551727370732</string>
+    <string name="fb_login_protocol_scheme">fb133551727370732</string>
 
+c
 </resources>

@@ -3,6 +3,141 @@
 
     <item
         is-multidex="true"
+        jar="/Users/Julio/.android/build-cache/d36617b23fd3d18a88056c9bb46bac65eea6fb26/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9a0c96cb2e74d3a6e692d920c9e03326e77f6429">
+        <dex dex="/Users/Julio/Desktop/competition/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_571d0f05a0919e615d7293bd81ed5aba9ea81432/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Julio/.android/build-cache/f1f77544cc15b71cd1058f0553649bff60d16587/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/Julio/Desktop/competition/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6da82544597f21343f449429d080c33b44592d4e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Julio/.android/build-cache/420f7e277316889c2be29fc77685b96029799913/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="807751a24cf96566fd8675517c94d8463cf364db">
+        <dex dex="/Users/Julio/Desktop/competition/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5eb09afdc20a05ec10b2d3b5f5a1484170554aa7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Julio/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.3.0/73c49077166faa4c3c0059c5f583d1d7bd1475fe/core-3.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="73c49077166faa4c3c0059c5f583d1d7bd1475fe">
+        <dex dex="/Users/Julio/Desktop/competition/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/core-3.3.0_2d64e94c894bb1702d91d424645ceec26a9d574b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Julio/.android/build-cache/fe3188743b5ac76b7a242c009889c9be572edd17/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="53e8932b1ac8c7dfc35cfeda1f9efbc9822ceaf3">
+        <dex dex="/Users/Julio/Desktop/competition/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8284fb349c9d28430a199d3bf57ea93a92833427/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Julio/.android/build-cache/e39f4d59a4989e1122c6e15a505f7b5f95214a21/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="/Users/Julio/Desktop/competition/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9c8ea9b3090edb6de89ab8daa45dc5be3ec67cbd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Julio/Desktop/competition/Beyond_Thrift/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8203725bd5dc2bf6ce4aaed428bd2df59c1e35be">
+        <dex dex="/Users/Julio/Desktop/competition/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_a8e7c39761f5dbb6a811d0147c58f2ea9979dcf8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Julio/.android/build-cache/980bdba82ee2f5f9b6da8d8a5f306940cc5bd266/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="82ea5a937ab84229fbd2f3fc8cf2a72cbdf0ee0f">
+        <dex dex="/Users/Julio/Desktop/competition/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3282f03e0938c5a00e7d406e9e1f0b47f996920f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Julio/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/Julio/Desktop/competition/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-tasks-1.4.0_6ddf010296239fc1270dcfe31eb1d56bd1e54c4a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Julio/.android/build-cache/2b90e64605343260e2a7e6eeb990bb9b3a6265a9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bc9ea2bc291bbebc83f5b160d115c699bddc4e16">
+        <dex dex="/Users/Julio/Desktop/competition/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d0a7a178a9788f0c2349d78c2b0528b1c970cf18/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Julio/.android/build-cache/29c8f72c1f90e21c9367813344f4236254ad692f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="252896ce41f2a84a2849e29235e66098be7d12ee">
+        <dex dex="/Users/Julio/Desktop/competition/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f2c1cf63aa62b4e5156e914de253744e4c97a549/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Julio/.android/build-cache/239875084edac449173afd026ab4314a408d9b49/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/Julio/Desktop/competition/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_49ac3d2a3db216cfc12fa90d1852ed68d96b3827/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Julio/.android/build-cache/5bed0d469688a5d832982f1152c5374da77fd36b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2482bfd874e8b3927f4141105674ad392ff83698">
+        <dex dex="/Users/Julio/Desktop/competition/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_aebd7f34238a08c9b78b54bcea695c4b58befcfd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Julio/.android/build-cache/8de97a6b28d095780cbf8da01f73cb1d7b179c45/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b8b26b28aae0ba8e2db55ad9fe0ebc770530c5ef">
+        <dex dex="/Users/Julio/Desktop/competition/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_776c9fc2f5c337e5c866fc6b75c118b71e9cd4f6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Julio/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="/Users/Julio/Desktop/competition/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-applinks-1.4.0_9c88630b37b6cc00d39fe33d9c8054574508eac2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/Julio/Desktop/competition/Beyond_Thrift/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
@@ -12,12 +147,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/Julio/Desktop/competition/Beyond_Thrift/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="/Users/Julio/.android/build-cache/f8b8c28b309e353a8b270000d83743c360fd9c70/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="43664ab5233fdb1b2553a1ec23ee57af8c6f4d0d">
-        <dex dex="/Users/Julio/Desktop/competition/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_a8e7c39761f5dbb6a811d0147c58f2ea9979dcf8/classes.dex" />
+        sha1="0d394688dd7030b83dea8eed3fa483410c24afe0">
+        <dex dex="/Users/Julio/Desktop/competition/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fa989c499c6da9c175e71dd354d3a0cc7a3df784/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Julio/.android/build-cache/661cec4d87bcacb0ae01e6475f98744558d99324/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/Julio/Desktop/competition/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a9ba5ed05207a3faa9a79fc505715dde29f07376/classes.dex" />
     </item>
 
 </items>
