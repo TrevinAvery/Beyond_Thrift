@@ -10,6 +10,7 @@
         android:id="@+id/signUpButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/blue_button"
         android:layout_gravity="center"
         android:text="Sign Up"/>
 
@@ -17,6 +18,7 @@
         android:id="@+id/loginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/yellow_button"
         android:layout_gravity="center"
         android:text="Login"/>
 
@@ -48,6 +50,7 @@
         android:id="@+id/facebookLoginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/facebook_button"
         android:layout_gravity="center"
         android:text="Sign Up with Facebook"/>
 
@@ -55,6 +58,7 @@
         android:id="@+id/googleLoginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/g_plus_button"
         android:layout_gravity="center"
         android:text="Sign Up with Google"/>
 
