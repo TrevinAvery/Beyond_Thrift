@@ -125,10 +125,13 @@ public class MainActivity extends Activity {
             case 2:
                 fragment = new DonateFragment();
                 break;
-            case 4:
-                fragment = onboardingFragment;
+            case 3:
+                fragment = new DonatedItemsFragment();
                 break;
             case 5:
+                fragment = onboardingFragment;
+                break;
+            case 6:
                 intent = new Intent(this, SettingsActivity.class);
                 break;
             default:

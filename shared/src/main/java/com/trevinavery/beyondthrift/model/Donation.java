@@ -33,19 +33,19 @@ public class Donation {
     /**
      * Constructs a Person object with pre-entered data.
      *
-     * @param personID
-     * @param descendant
-     * @param firstName
-     * @param lastName
-     * @param gender
+     * @param description
+     * @param size
+     * @param location
+     * @param start
+     * @param end
      */
-    public Donation(String personID, String descendant, String firstName, String lastName,
-                    String gender) {
-        setDescription(personID);
-        setSize(descendant);
-        setLocation(firstName);
-        setStart(lastName);
-        setEnd(gender);
+    public Donation(String description, String size, String location, String start,
+                    String end) {
+        setDescription(description);
+        setSize(size);
+        setLocation(location);
+        setStart(start);
+        setEnd(end);
     }
 
     public String getDescription() {
