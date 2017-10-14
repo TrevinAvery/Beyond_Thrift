@@ -64,19 +64,18 @@ public class MyMapFragment extends Fragment implements OnMapReadyCallback {
     }
 
     private Location[] dropOffLocations = {
-            new Location("store", "Orem Store", "165 North State St", "Orem", "UT", "84057", "40.3003298", "-111.7664602", "801-555-5555", "Mon-Fri: 8am-5pm"),
-            new Location("store", "West Valley Store", "3749 S Constitution Blvd", "West Valley City", "UT", "84119", "40.6908489", "-111.9592429", "801-555-5555", "Mon-Fri: 8am-5pm"),
-
-            new Location("bin", "Granite School District Office", "165 W 7200 S", "Midvale", "UT", "84047", "40.619596", "-111.8981467", "801-555-5555", "Mon-Fri: 8am-5pm"),
-            new Location("bin", "Cyprus High School", "8739 W 3000 S", "Magna", "UT", "84044", "40.7057", "-112.1026787", "801-555-5555", "Mon-Fri: 8am-5pm"),
-            new Location("bin", "Millcreek Elementary School", "3761 S 1100 E", "Salt Lake City", "UT", "84106", "40.6893034", "-111.8607833", "801-555-5555", "Mon-Fri: 8am-5pm"),
-            new Location("bin", "Wasatch Jr High School", "3750 S 3100 E", "Salt Lake City", "UT", "84109", "40.690719", "-111.8086177", "801-555-5555", "Mon-Fri: 8am-5pm"),
-            new Location("bin", "Cottonwood Elementary School", "5205 Holladay Blvd", "Holladay", "UT", "84117", "40.6566013", "-111.8180488", "801-555-5555", "Mon-Fri: 8am-5pm"),
-            new Location("bin", "Jolley’s Compounding Pharmacy", "1702 South 1100 East", "Salt Lake City", "UT", "84105", "40.7333838", "-111.8621177", "801-555-5555", "Mon-Fri: 8am-5pm"),
-            new Location("bin", "Wendy’s in Highland", "10969 N Town Center Blvd", "Highland", "UT", "84003", "40.431139", "-111.7917937", "801-555-5555", "Mon-Fri: 8am-5pm"),
-            new Location("bin", "Kohl’s American Fork", "634 Pacific Dr", "American Fork", "UT", "84003", "40.3826808", "-111.8194143", "801-555-5555", "Mon-Fri: 8am-5pm"),
-            new Location("bin", "Vasa Fitness Orem", "15 E 700 N", "Orem", "UT", "84057", "40.310244", "-111.6976168", "801-555-5555", "Mon-Fri: 8am-5pm"),
-            new Location("bin", "Sam’s Club Provo", "1225 S University Ave", "Provo", "UT", "84606", "40.217361", "-111.6605686", "801-555-5555", "Mon-Fri: 8am-5pm")
+            new Location("store", "Orem Store", "165 North State St", "Orem", "UT", "84057", "40.3003509", "-111.6964203", "801-555-5555", "Mon-Fri: 8am-5pm"),
+            new Location("store", "West Valley Store", "3749 S Constitution Blvd", "West Valley City", "UT", "84119", "40.6908489", "-111.9570542", "801-555-5555", "Mon-Fri: 8am-5pm"),
+            new Location("bin", "Granite School District Office", "165 W 7200 S", "Midvale", "UT", "84047", "40.619596", "-111.895958", "801-555-5555", "Mon-Fri: 8am-5pm"),
+            new Location("bin", "Cyprus High School", "8739 W 3000 S", "Magna", "UT", "84044", "40.7057", "-112.10049", "801-555-5555", "Mon-Fri: 8am-5pm"),
+            new Location("bin", "Millcreek Elementary School", "3761 S 1100 E", "Salt Lake City", "UT", "84106", "40.6893034", "-111.8585946", "801-555-5555", "Mon-Fri: 8am-5pm"),
+            new Location("bin", "Wasatch Jr High School", "3750 S 3100 E", "Salt Lake City", "UT", "84109", "40.690719", "-111.806429", "801-555-5555", "Mon-Fri: 8am-5pm"),
+            new Location("bin", "Cottonwood Elementary School", "5205 Holladay Blvd", "Holladay", "UT", "84117", "40.6566013", "-111.8158601", "801-555-5555", "Mon-Fri: 8am-5pm"),
+            new Location("bin", "Jolley’s Compounding Pharmacy", "1702 South 1100 East", "Salt Lake City", "UT", "84105", "40.7333838", "-111.859929", "801-555-5555", "Mon-Fri: 8am-5pm"),
+            new Location("bin", "Wendy’s in Highland", "10969 N Town Center Blvd", "Highland", "UT", "84003", "40.431139", "-111.789605", "801-555-5555", "Mon-Fri: 8am-5pm"),
+            new Location("bin", "Kohl’s American Fork", "634 Pacific Dr", "American Fork", "UT", "84003", "40.3826808", "-111.8172256", "801-555-5555", "Mon-Fri: 8am-5pm"),
+            new Location("bin", "Vasa Fitness Orem", "15 E 700 N", "Orem", "UT", "84057", "40.310244", "-111.6954281", "801-555-5555", "Mon-Fri: 8am-5pm"),
+            new Location("bin", "Sam’s Club Provo", "1225 S University Ave", "Provo", "UT", "84606", "40.217361", "-111.6583799", "801-555-5555", "Mon-Fri: 8am-5pm")
     };
 
 
