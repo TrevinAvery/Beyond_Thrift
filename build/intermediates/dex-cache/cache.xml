@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/Users/trevinavery/Workspace/AndroidStudioProjects/Beyond_Thrift/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/Users/Julio/Desktop/competition/Beyond_Thrift/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/Users/trevinavery/Workspace/AndroidStudioProjects/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_a3484a8ea1cfb09bce093258ead23fbe6a2a21a4/classes.dex" />
+        <dex dex="/Users/Julio/Desktop/competition/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_0f900f0b44c760bfb3af457898efe0b7324b53ce/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/trevinavery/Workspace/AndroidStudioProjects/Beyond_Thrift/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="/Users/Julio/Desktop/competition/Beyond_Thrift/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="a4a413b42338e721760447b519d3e263a9562580">
-        <dex dex="/Users/trevinavery/Workspace/AndroidStudioProjects/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_b0ebfb16a42ac1cf94085d6aff1a586607601a23/classes.dex" />
+        sha1="43664ab5233fdb1b2553a1ec23ee57af8c6f4d0d">
+        <dex dex="/Users/Julio/Desktop/competition/Beyond_Thrift/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_a8e7c39761f5dbb6a811d0147c58f2ea9979dcf8/classes.dex" />
     </item>
 
 </items>

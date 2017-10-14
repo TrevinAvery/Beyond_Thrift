@@ -113,7 +113,7 @@ public class MainActivity extends Activity {
 
         switch (position) {
             case 0:
-                fragment = new MainFragment();
+                fragment = new PromotionsFragment();
                 break;
             case 1:
                 fragment = new MyMapFragment();
