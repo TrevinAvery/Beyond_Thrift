@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Family Map</string>
+    <string name="app_name">Beyond Thrift</string>
 
     <string name="google_maps_key">AIzaSyD1Zmm7beXAxoydo7doRKkCOAt72W51ZbE</string>
 
@@ -11,6 +11,12 @@
     <string name="title_activity_settings">Settings</string>
 
     <!-- Main Activity Strings -->
+    <string-array name="main_drawer_items">
+        <item>Normal</item>
+        <item>Satellite</item>
+        <item>Terrain</item>
+        <item>Hybrid</item>
+    </string-array>
 
     <!-- OnboardingFragment Strings -->
     <string name="onboarding_text">Make donations, provide service by picking up donations and find information about clothing drives all in one app</string>
