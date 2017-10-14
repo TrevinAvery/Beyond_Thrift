@@ -12,10 +12,12 @@
 
     <!-- Main Activity Strings -->
     <string-array name="main_drawer_items">
-        <item>Normal</item>
-        <item>Satellite</item>
-        <item>Terrain</item>
-        <item>Hybrid</item>
+        <item>News &amp; Events</item>
+        <item>Drop Off Locations</item>
+        <item>Schedule a Pick Up</item>
+        <item>Cash Donation</item>
+        <item>About Us</item>
+        <item>Logout</item>
         <item>Settings</item>
     </string-array>
 
