@@ -16,6 +16,7 @@
         <item>Satellite</item>
         <item>Terrain</item>
         <item>Hybrid</item>
+        <item>Settings</item>
     </string-array>
 
     <!-- OnboardingFragment Strings -->
