@@ -122,9 +122,6 @@ public class MainActivity extends Activity {
                 fragment = onboardingFragment;
                 break;
             case 5:
-                fragment = loginFragment;
-                break;
-            case 6:
                 intent = new Intent(this, SettingsActivity.class);
                 break;
             default:

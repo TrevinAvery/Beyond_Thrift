@@ -19,14 +19,18 @@ import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 import com.trevinavery.beyondthrift.R;
 import com.trevinavery.beyondthrift.model.Event;
+import com.trevinavery.beyondthrift.model.Location;
 import com.trevinavery.beyondthrift.model.Model;
 import com.trevinavery.beyondthrift.model.Person;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,11 +50,11 @@ public class MyMapFragment extends Fragment implements OnMapReadyCallback {
 
     private String eventID;
     private GoogleMap googleMap;
-    private Map<String, Event> markerMap;
+    private Map<String, Location> markerMap;
     private List<Polyline> polylines;
 
     private View eventInfo;
-    private TextView title;
+//    private TextView title;
     private TextView description;
     private ImageView icon;
 
@@ -58,10 +62,22 @@ public class MyMapFragment extends Fragment implements OnMapReadyCallback {
         // Required default constructor
     }
 
-    private String[][] locations = {
-            {"28.20893", "29.6426", "address"},
-            {"28.20833", "43.0983", "address2"}
+    private Location[] dropOffLocations = {
+            new Location("store", "Orem Store", "165 North State St", "Orem", "UT", "84057", "40.3003298", "-111.7664602"),
+            new Location("store", "West Valley Store", "3749 S Constitution Blvd", "West Valley City", "UT", "84119", "40.6908489", "-111.9592429"),
+
+            new Location("bin", "Granite School District Office", "165 W 7200 S", "Midvale", "UT", "84047", "40.619596", "-111.8981467"),
+            new Location("bin", "Cyprus High School", "8739 W 3000 S", "Magna", "UT", "84044", "40.7057", "-112.1026787"),
+            new Location("bin", "Millcreek Elementary School", "3761 S 1100 E", "Salt Lake City", "UT", "84106", "40.6893034", "-111.8607833"),
+            new Location("bin", "Wasatch Jr High School", "3750 S 3100 E", "Salt Lake City", "UT", "84109", "40.690719", "-111.8086177"),
+            new Location("bin", "Cottonwood Elementary School", "5205 Holladay Blvd", "Holladay", "UT", "84117", "40.6566013", "-111.8180488"),
+            new Location("bin", "Jolley’s Compounding Pharmacy", "1702 South 1100 East", "Salt Lake City", "UT", "84105", "40.7333838", "-111.8621177"),
+            new Location("bin", "Wendy’s in Highland", "10969 N Town Center Blvd", "Highland", "UT", "84003", "40.431139", "-111.7917937"),
+            new Location("bin", "Kohl’s American Fork", "634 Pacific Dr", "American Fork", "UT", "84003", "40.3826808", "-111.8194143"),
+            new Location("bin", "Vasa Fitness Orem", "15 E 700 N", "Orem", "UT", "84057", "40.310244", "-111.6976168"),
+            new Location("bin", "Sam’s Club Provo", "1225 S University Ave", "Provo", "UT", "84606", "40.217361", "-111.6605686")
     };
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -123,7 +139,7 @@ public class MyMapFragment extends Fragment implements OnMapReadyCallback {
         mapFragment.getMapAsync(this);
 
         eventInfo = view.findViewById(R.id.eventInfo);
-        title = (TextView) view.findViewById(R.id.titleTextView);
+//        title = (TextView) view.findViewById(R.id.titleTextView);
         description = (TextView) view.findViewById(R.id.descriptionTextView);
         icon = (ImageView) view.findViewById(R.id.icon);
 
@@ -138,14 +154,16 @@ public class MyMapFragment extends Fragment implements OnMapReadyCallback {
             @Override
             public boolean onMarkerClick(Marker marker) {
 
-                updateMapSelection(marker, true);
+//                updateMapSelection(marker, true);
 
                 // return true to prevent the default behavior
-                return true;
+                return false;
             }
         };
 
         googleMap.setOnMarkerClickListener(onMarkerClickListener);
+
+        googleMap.setInfoWindowAdapter(new MyInfoWindowAdapter());
 
         updateMapMarkers(true);
     }
@@ -175,20 +193,32 @@ public class MyMapFragment extends Fragment implements OnMapReadyCallback {
         Marker marker;
 
         Marker selectedMarker = null;
+//        boolean first = true;
 
-        for (String[] location : locations) {
-            pos = new LatLng(Double.parseDouble(location[0]), Double.parseDouble(location[1]));
+        for (Location location : dropOffLocations) {
+            pos = new LatLng(Double.parseDouble(location.getLatitude()), Double.parseDouble(location.getLongitude()));
             marker = googleMap.addMarker(new MarkerOptions().position(pos)
                     .icon(BitmapDescriptorFactory
-                            .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
-//            markerMap.put(marker.getId(), event);
+                            .defaultMarker(location.getType().equals("bin")
+                                    ? BitmapDescriptorFactory.HUE_AZURE : BitmapDescriptorFactory.HUE_RED))
+                    .title(location.getTitle())
+                    .snippet(location.getAddress()));
+            markerMap.put(marker.getId(), location);
 
             // save the marker for the selected event
-//            if (eventID != null && eventID.equals(event.getEventID())) {
+//            if (first) {
+//                first = false;
 //                selectedMarker = marker;
 //            }
         }
+//        googleMap.animateCamera(CameraUpdateFactory.zoomTo(10.0f), 250, null);
 
+//        LatLngBounds utah = new LatLngBounds(
+//                new LatLng(-44, 113), new LatLng(-10, 154));
+
+        LatLng center = new LatLng(40.488444, -111.853867);
+
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(center, 9.5f));
 //        updateMapSelection(selectedMarker, doScroll);
     }
 
@@ -205,33 +235,33 @@ public class MyMapFragment extends Fragment implements OnMapReadyCallback {
         // check if a marker is selected
         if (marker != null) {
             // marker selected, update event info
-            Event event = markerMap.get(marker.getId());
-            eventID = event.getEventID();
+            Location location = markerMap.get(marker.getId());
+//            eventID = location.getEventID();
 
 //            drawLines(event);
 
-            final String personID = event.getPersonID();
-            Person person = Model.getPerson(personID);
+//            final String personID = location.getPersonID();
+//            Person person = Model.getPerson(personID);
 
-            title.setText(person.getName());
-            title.setTextAlignment(View.TEXT_ALIGNMENT_VIEW_START);
-            description.setText(event.getDescription());
+//            title.setText(location.getType());
+            description.setTextAlignment(View.TEXT_ALIGNMENT_VIEW_START);
+            description.setText(location.getAddress());
 
             icon.setVisibility(View.VISIBLE);
-            if (person.getGender().equalsIgnoreCase("m")) {
-                icon.setImageResource(R.drawable.icons8_male_48);
+            if (location.getType().equals("bin")) {
+                icon.setImageResource(R.mipmap.bin_icon);
             } else {
-                icon.setImageResource(R.drawable.icons8_female_48);
+                icon.setImageResource(R.mipmap.store_icon);
             }
 
-            eventInfo.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent personIntent = new Intent(getContext(), PersonActivity.class);
-                    personIntent.putExtra(PersonActivity.EXTRA_PERSON_ID, personID);
-                    startActivity(personIntent);
-                }
-            });
+//            eventInfo.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View view) {
+//                    Intent personIntent = new Intent(getContext(), PersonActivity.class);
+//                    personIntent.putExtra(PersonActivity.EXTRA_PERSON_ID, personID);
+//                    startActivity(personIntent);
+//                }
+//            });
 
             if (doScroll) {
                 googleMap.animateCamera(CameraUpdateFactory
@@ -242,12 +272,43 @@ public class MyMapFragment extends Fragment implements OnMapReadyCallback {
             eventID = null;
 //            drawLines(null);
             icon.setVisibility(View.GONE);
-            title.setText(R.string.prompt_click_marker);
-            title.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
-            description.setText("");
+            description.setText(R.string.prompt_click_marker);
+            description.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+//            description.setText("");
             eventInfo.setOnClickListener(null);
         }
     }
+
+    private class MyInfoWindowAdapter implements GoogleMap.InfoWindowAdapter {
+
+        @Override
+        public View getInfoWindow(Marker marker) {
+            return null;
+        }
+
+        @Override
+        public View getInfoContents(Marker marker) {
+            View view = getActivity().getLayoutInflater().inflate(R.layout.map_info_window, null);
+
+            Location location = markerMap.get(marker.getId());
+
+            ImageView icon = (ImageView) view.findViewById(R.id.icon);
+            if (location.getType().equals("bin")) {
+                icon.setImageResource(R.mipmap.bin_icon);
+            } else {
+                icon.setImageResource(R.mipmap.store_icon);
+            }
+
+            TextView title = (TextView) view.findViewById(R.id.title);
+            title.setText(location.getTitle());
+
+            TextView address = (TextView) view.findViewById(R.id.address);
+            address.setText(location.getAddress());
+
+            return view;
+        }
+    }
+
 //
 //    /**
 //     * Draws all enabled lines.
