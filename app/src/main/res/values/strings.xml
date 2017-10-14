@@ -21,12 +21,13 @@
     </string-array>
 
     <!-- PromotionsFragment Strings -->
-    <string name="upcoming_discounts_header_string">Upcoming Discounts</string>
-    <string name="upcoming_discounts_string">&#8226; orem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed dolor justo. Morbi lobortis congue justo at convallis. Nam efficitur vel augue in venenatis \n
-         &#8226; In leo nulla, pretium nec pharetra nec, tincidunt sed massa.  \n
-        &#8226; Praesent blandit fermentum diam, vitae vestibulum purus fermentum sed.</string>
+    <string name="upcoming_discounts_header_string">50% Off Saturday Sale</string>
+    <string name="upcoming_discounts_subheader">West Valley and Orem Stores Every Saturday</string>
+    <string name="upcoming_discounts_string">Sale includes: Clothing, linens and shoes.
+        \nExcludes: Current and white tags, furniture, jewelry and hard goods. </string>
     <string name="coupons_header_string">Coupons</string>
-    <string name="news_header_string">News</string>
+    <string name="news_header_string">Check Out our New Mobile App</string>
+    <string name="news_string">Make donations, schedule pickups, locate stores and bins, and find events and promotions from our mobile app!</string>
     <!-- OnboardingFragment Strings -->
     <string name="onboarding_text">Make donations, provide service by picking up donations and find information about clothing drives all in one app</string>
     <string name="button_get_started">Get Started</string>
@@ -116,9 +117,9 @@
     <string name="filter_title_mothers_side">Mother\'s Side</string>
     <string name="filter_description_mothers_side">Filter by mother\'s side of family</string>
     <string name="filter_title_male_events">Male Events</string>
-    <string name="filter_description_male_events">Filter events based on end</string>
+    <string name="filter_description_male_events">Filter events based on gender</string>
     <string name="filter_title_female_events">Female Events</string>
-    <string name="filter_description_female_events">Filter events based on end</string>
+    <string name="filter_description_female_events">Filter events based on gender</string>
 
     <!-- genders -->
 
