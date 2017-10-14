@@ -155,6 +155,7 @@ public class SettingsActivity extends Activity {
             }
         });
 
+
         //email buttons
         TextView emailAddressButton = (TextView) findViewById(R.id.id_email_address_setting);
         emailAddressButton.setOnClickListener(new View.OnClickListener() {
@@ -179,5 +180,8 @@ public class SettingsActivity extends Activity {
                 finish();
             }
         });
+    }
+    private void somefuntcion(){
+
     }
 }
