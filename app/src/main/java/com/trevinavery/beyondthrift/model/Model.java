@@ -182,8 +182,8 @@ public class Model {
     private static boolean[] lineSwitches = new boolean[] {true, true, true};
 
     private static int[] colorResources = new int[] {
-            R.color.red,
-            R.color.green,
+            R.color.blue_ripple,
+            R.color.blue,
             R.color.blue
     };
 
