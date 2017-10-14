@@ -346,7 +346,7 @@ public class LoginFragment extends Fragment {
 //
 //                Person user = Model.getPerson(result.getPersonID());
 //
-//                message = user.getFirstName() + " " + user.getLastName();
+//                message = user.getLocation() + " " + user.getStart();
 //            } else {
 //                message = result.getMessage();
 //            }
@@ -391,7 +391,7 @@ public class LoginFragment extends Fragment {
 //
 //                Person user = Model.getPerson(result.getPersonID());
 //
-//                message = user.getFirstName() + " " + user.getLastName();
+//                message = user.getLocation() + " " + user.getStart();
 //            } else {
 //                message = result.getMessage();
 //            }

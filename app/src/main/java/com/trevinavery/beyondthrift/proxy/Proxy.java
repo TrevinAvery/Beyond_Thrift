@@ -1,5 +1,7 @@
 package com.trevinavery.beyondthrift.proxy;
 
+import android.util.Log;
+
 import com.google.gson.Gson;
 
 import java.io.IOException;
@@ -11,8 +13,10 @@ import java.net.HttpURLConnection;
 import java.net.SocketTimeoutException;
 import java.net.URL;
 
+import com.trevinavery.beyondthrift.model.Donation;
 import com.trevinavery.beyondthrift.request.LoginRequest;
 import com.trevinavery.beyondthrift.request.RegisterRequest;
+import com.trevinavery.beyondthrift.result.DonationResult;
 import com.trevinavery.beyondthrift.result.EventResult;
 import com.trevinavery.beyondthrift.result.LoginResult;
 import com.trevinavery.beyondthrift.result.PersonResult;
@@ -42,22 +46,26 @@ public class Proxy {
      * Registers a new user and logs them into the server. If an error occurs,
      * the description of the error can be retrieved with <code>getMessage()</code>.
      *
-     * @param request the RegisterRequest object to use while registering the new user
+     * @param donation the RegisterRequest object to use while registering the new user
      * @return the result of the request
      */
-    public RegisterResult register(RegisterRequest request) {
+    public DonationResult donate(Donation donation) {
 
         Gson gson = new Gson();
 
-        String requestStr = gson.toJson(request);
+        String requestStr = gson.toJson(donation);
 
-        InputStreamReader resultStr = post("/user/register/", requestStr);
+        InputStreamReader resultStr = post("/donate.php", requestStr);
 
-        if (resultStr == null) {
-            return null;
+        if (resultStr != null) {
+            try {
+                return gson.fromJson(resultStr, DonationResult.class);
+            } catch (Exception e) {
+                // probably a 404 or 500 server error
+            }
         }
 
-        return gson.fromJson(resultStr, RegisterResult.class);
+        return null;
     }
 
     /**
