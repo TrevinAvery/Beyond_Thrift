@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trevinavery.beyondthrift.app.OnboardingFragment">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/beyond_thrift_logo"
+        android:padding="20dp"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/onboardingText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/onboarding_text"
+        android:layout_below="@id/logo"
+        android:padding="20dp"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/getStartedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/clickable"
+        android:padding="20dp"
+        android:text="@string/button_get_started"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

@@ -6,142 +6,40 @@
     android:orientation="vertical"
     android:background="@android:color/background_light">
 
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:paddingTop="10dp"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:columnCount="2">
-
-        <TextView
-            android:id="@+id/serverHostTextView"
-            style="@style/label"
-            android:text="@string/label_server_host"/>
-
-        <EditText
-            android:id="@+id/serverHostEditText"
-            style="@style/input"
-            android:inputType="text"
-            android:text="@string/default_server_host"/>
-
-        <TextView
-            android:id="@+id/serverPortTextView"
-            style="@style/label"
-            android:text="@string/label_server_port"/>
-
-        <EditText
-            android:id="@+id/serverPortEditText"
-            style="@style/input"
-            android:inputType="number"
-            android:text="@string/default_server_port"/>
-
-        <TextView
-            android:id="@+id/usernameTextView"
-            style="@style/label"
-            android:text="@string/label_username"/>
-
-        <EditText
-            android:id="@+id/usernameEditText"
-            style="@style/input"
-            android:inputType="text"
-            android:text="@string/default_username" />
-
-        <TextView
-            android:id="@+id/passwordTextView"
-            style="@style/label"
-            android:text="@string/label_password"/>
-
-        <EditText
-            android:id="@+id/passwordEditText"
-            style="@style/input"
-            android:inputType="textPassword"
-            android:text="@string/default_password"/>
-
-        <TextView
-            android:id="@+id/firstNameTextView"
-            style="@style/label"
-            android:text="@string/label_first_name"/>
-
-        <EditText
-            android:id="@+id/firstNameEditText"
-            style="@style/input"
-            android:inputType="textPersonName"
-            android:text="@string/default_first_name"/>
-
-        <TextView
-            android:id="@+id/lastNameTextView"
-            style="@style/label"
-            android:text="@string/label_last_name" />
-
-        <EditText
-            android:id="@+id/lastNameEditText"
-            style="@style/input"
-            android:inputType="textPersonName"
-            android:text="@string/default_last_name"/>
-
-        <TextView
-            android:id="@+id/emailTextView"
-            style="@style/label"
-            android:text="@string/label_email"/>
-
-        <EditText
-            android:id="@+id/emailEditText"
-            style="@style/input"
-            android:inputType="textEmailAddress"
-            android:text="@string/default_email"/>
-
-        <TextView
-            android:id="@+id/genderTextView"
-            style="@style/label"
-            android:layout_marginTop="5dp"
-            android:text="@string/label_gender"/>
-
-        <RadioGroup
-            android:id="@+id/genderRadioGroup"
-            style="@style/input"
-            android:layout_marginTop="5dp"
-            android:orientation="horizontal"
-            android:checkedButton="@+id/maleRadioButton">
-
-            <RadioButton
-                android:id="@id/maleRadioButton"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="@string/gender_male"/>
-
-            <RadioButton
-                android:id="@+id/femaleRadioButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:text="@string/gender_female"/>
-
-        </RadioGroup>
-
-    </GridLayout>
-
-    <LinearLayout
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp">
-
-        <Button
-            android:id="@+id/signInButton"
+        android:text="Sign Up"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <view
+            android:layout_width="5dp"
+            android:layout_height="1dp"
+            android:solidColor="@color/blue"/>
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:text="@string/label_sign_in" />
-
-        <Button
-            android:id="@+id/registerButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/label_register" />
-
+            android:text="or"/>
+        <view
+            android:layout_width="5dp"
+            android:layout_height="1dp"/>
     </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"/>
+
 
 </LinearLayout>

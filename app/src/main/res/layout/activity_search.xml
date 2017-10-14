@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.trevinavery.familymap.app.SearchActivity">
+    tools:context="com.trevinavery.beyondthrift.app.SearchActivity">
 
     <FrameLayout
         style="@style/list_item_wrapper"
