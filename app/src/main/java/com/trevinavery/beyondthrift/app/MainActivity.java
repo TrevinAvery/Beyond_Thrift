@@ -7,6 +7,7 @@ import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -49,7 +50,7 @@ public class MainActivity extends Activity {
                     // user has logged in, switch to map fragment
                     FragmentTransaction ft = getFragmentManager().beginTransaction();
 
-//                    ft.setCustomAnimations(0, R.animator.slide_out_down);
+                    ft.setCustomAnimations(0, R.animator.slide_out_down);
                     ft.replace(R.id.fragmentContainer, loginFragment);
                     ft.commit();
                 }
@@ -62,14 +63,15 @@ public class MainActivity extends Activity {
                     // user has logged in, switch to map fragment
                     FragmentTransaction ft = getFragmentManager().beginTransaction();
 
-//                    ft.setCustomAnimations(0, R.animator.slide_out_down);
-                    ft.replace(R.id.fragmentContainer, mainFragment);
+                    ft.setCustomAnimations(0, R.animator.slide_out_down);
+                    ft.replace(R.id.fragmentContainer, new PromotionsFragment());
                     ft.commit();
                     mDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED);
+                    mDrawerLayout.openDrawer(Gravity.START);
                 }
             });
 
-            mainFragment = new MainFragment();
+//            mainFragment = new MainFragment();
 
 
 
