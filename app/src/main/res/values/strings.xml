@@ -57,6 +57,15 @@
 
     <string name="toast_resync_failed">Re-sync failed</string>
     <string name="toast_logout">Logout</string>
+    <string name="home_address_string">Home Address</string>
+    <string name="change_address_string">Click to Change Address</string>
+    <string name="user_home_address">124 W 450 N Provo, UT 84601</string>
+    <string name="email_address_string">Email Address</string>
+    <string name="user_email_address">charity@charity.org</string>
+    <string name="email_receipts">Email Receipts</string>
+    <string name="vehicle_capacity_string">Vehicle Capacity</string>
+    <string name="notifications_setting_string">Send me Notifications</string>
+    <string name="logout_text">Logout</string>
 
     <string-array name="settings_titles">
         <item>Life Story Lines</item>
@@ -124,5 +133,6 @@
     <string name="icon_expand_list">Expand List Icon</string>
     <string name="icon_gender">Gender Icon</string>
     <string name="icon_gender_or_map">Gender or Map Icon</string>
+
 
 </resources>

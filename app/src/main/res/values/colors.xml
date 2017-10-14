@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- line colors -->
-    <color name="red">#e1292c</color>
-    <color name="green">#38ae43</color>
-    <color name="blue">#2945e1</color>
+    <color name="g_plus_red">#dd4b39</color>
+    <color name="g_plus_ripple">#d52b18</color>
+    <color name="facebook_blue">#3b5998</color>
+    <color name="facebook_ripple">#333977</color>
+    <color name="yellow">#faa823</color>
+    <color name="yellow_ripple">#f28802</color>
+    <color name="blue">#34a5dd</color>
+    <color name="blue_ripple">#2c85bc</color>
 </resources>
