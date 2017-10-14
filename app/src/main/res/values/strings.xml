@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">Family Map</string>
+
+    <string name="google_maps_key">AIzaSyD1Zmm7beXAxoydo7doRKkCOAt72W51ZbE</string>
+
+    <!-- Activity titles -->
+
+    <string name="title_activity_person">Family Map: Person Detials</string>
+    <string name="title_activity_filter">Family Map: Filter</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Main Activity Strings -->
+
+    <!-- Action Item Labels -->
+    <string name="action_search">Search</string>
+    <string name="action_filter">Filter</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Login/Register Input Labels -->
+    <string name="label_sign_in">Sign In</string>
+    <string name="label_register">Register</string>
+    <string name="label_gender">Gender</string>
+    <string name="label_email">Email</string>
+    <string name="label_last_name">Last Name</string>
+    <string name="label_first_name">First Name</string>
+    <string name="label_password">Password</string>
+    <string name="label_username">Username</string>
+    <string name="label_server_port">Server Port</string>
+    <string name="label_server_host">Server Host</string>
+
+    <!-- Login/Register Default Values-->
+    <string name="default_server_host">10.25.56.79</string>
+    <!--<string name="default_server_host">192.168.2.46</string>-->
+    <string name="default_server_port">1234</string>
+    <string name="default_username">Username</string>
+    <string name="default_password">Password</string>
+    <string name="default_first_name">FirstName</string>
+    <string name="default_last_name">LastName</string>
+    <string name="default_email">email@site.com</string>
+
+
+    <string name="prompt_click_marker">Click a marker to see details</string>
+    <string name="connection_failed">Connection Failed</string>
+
+    <!-- Strings related to Settings -->
+
+    <string name="toast_resync_failed">Re-sync failed</string>
+    <string name="toast_logout">Logout</string>
+
+    <string-array name="settings_titles">
+        <item>Life Story Lines</item>
+        <item>Family Tree Lines</item>
+        <item>Spouse Lines</item>
+        <item>Map Type</item>
+        <item>Re-sync Data</item>
+        <item>Logout</item>
+    </string-array>
+
+    <string-array name="settings_descriptions">
+        <item>Show life story lines</item>
+        <item>Show family tree lines</item>
+        <item>Show spouse lines</item>
+        <item>Background display on map</item>
+        <item>From familymap service</item>
+        <item>Returns to login screen</item>
+    </string-array>
+
+    <string-array name="settings_line_color_names">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+    </string-array>
+
+    <string-array name="settings_map_types">
+        <item>Normal</item>
+        <item>Satellite</item>
+        <item>Terrain</item>
+        <item>Hybrid</item>
+    </string-array>
+
+    <!-- Filter strings -->
+
+    <string name="filter_title">%s Events</string>
+    <string name="filter_description">Filter by %s events</string>
+    <string name="filter_title_fathers_side">Father\'s Side</string>
+    <string name="filter_description_fathers_side">Filter by father\'s side of family</string>
+    <string name="filter_title_mothers_side">Mother\'s Side</string>
+    <string name="filter_description_mothers_side">Filter by mother\'s side of family</string>
+    <string name="filter_title_male_events">Male Events</string>
+    <string name="filter_description_male_events">Filter events based on gender</string>
+    <string name="filter_title_female_events">Female Events</string>
+    <string name="filter_description_female_events">Filter events based on gender</string>
+
+    <!-- genders -->
+
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+
+    <!-- Person Activity Strings -->
+
+    <string name="life_events">Life Events</string>
+    <string name="family">Family</string>
+
+    <string-array name="relationships">
+        <item>Spouse</item>
+        <item>Father</item>
+        <item>Mother</item>
+        <item>Child</item>
+    </string-array>
+
+    <!-- content descriptions -->
+
+    <string name="icon_expand_list">Expand List Icon</string>
+    <string name="icon_gender">Gender Icon</string>
+    <string name="icon_gender_or_map">Gender or Map Icon</string>
+
+</resources>

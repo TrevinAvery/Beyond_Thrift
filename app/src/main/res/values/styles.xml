@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- label and input for login fragment -->
+    <style name="label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">start|center_vertical</item>
+    </style>
+
+    <style name="input">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_gravity">fill_horizontal|center</item>
+    </style>
+
+    <!-- list items -->
+
+    <style name="clickable">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="list_item_wrapper">
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+    <style name="list_item_title">
+        <item name="android:textAppearance">@android:style/TextAppearance.Material.Title</item>
+    </style>
+
+    <style name="list_item_description">
+        <item name="android:textAppearance">@android:style/TextAppearance.Material.Small</item>
+    </style>
+
+    <style name="horizontal_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+</resources>

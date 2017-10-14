@@ -1,0 +1,12 @@
+apply plugin: 'java'
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'junit:junit:4.12'
+    compile project(':shared')
+    compile 'com.google.code.gson:gson:2.8.1'
+    compile files('libs/sqlite-jdbc-3.7.2.jar')
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"

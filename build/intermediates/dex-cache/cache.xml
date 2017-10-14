@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="E:\FamilyMap\shared\build\libs\shared.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="dc60a2eed786e33ad97714809a3f9bf3fb57d456">
+        <dex dex="E:\FamilyMap\app\build\intermediates\pre-dexed\debug\shared_75fdc5eb4f134285cd1418f1e7d3f159f9279470.jar" />
+    </item>
+
+</items>
