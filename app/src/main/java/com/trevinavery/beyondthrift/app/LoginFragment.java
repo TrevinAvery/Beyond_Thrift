@@ -1,7 +1,6 @@
 package com.trevinavery.beyondthrift.app;
 
 import android.app.Fragment;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.Editable;
@@ -12,16 +11,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.facebook.CallbackManager;
-import com.facebook.FacebookCallback;
-import com.facebook.FacebookException;
-import com.facebook.FacebookSdk;
-
-import com.facebook.login.LoginResult;
-import com.facebook.login.widget.LoginButton;
 import com.trevinavery.beyondthrift.R;
 import com.trevinavery.beyondthrift.model.Model;
 import com.trevinavery.beyondthrift.model.Person;
@@ -31,7 +22,7 @@ import com.trevinavery.beyondthrift.request.LoginRequest;
 import com.trevinavery.beyondthrift.request.RegisterRequest;
 import com.trevinavery.beyondthrift.result.EventResult;
 import com.trevinavery.beyondthrift.result.IResult;
-//import com.trevinavery.beyondthrift.result.LoginResult;
+import com.trevinavery.beyondthrift.result.LoginResult;
 import com.trevinavery.beyondthrift.result.PersonResult;
 import com.trevinavery.beyondthrift.result.RegisterResult;
 
@@ -43,7 +34,7 @@ import com.trevinavery.beyondthrift.result.RegisterResult;
 public class LoginFragment extends Fragment {
 
     private OnLoginListener onLoginListener;
-    CallbackManager callbackManager;
+
 //    private boolean runningTask;
 //
 //    private EditText serverHost;
@@ -60,16 +51,10 @@ public class LoginFragment extends Fragment {
     private Button login;
     private Button facebook;
     private Button google;
-    private LoginButton loginButton;
-    private TextView info;
+
 
     public LoginFragment() {
         // Required default constructor
-    }
-
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        callbackManager.onActivityResult(requestCode, resultCode, data);
     }
 
     @Override
@@ -77,40 +62,6 @@ public class LoginFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_login, container, false);
 
-        callbackManager = CallbackManager.Factory.create();
-
-
-
-        loginButton = (LoginButton) view.findViewById(R.id.facebookLoginButton);
-        loginButton.setReadPermissions("email");
-        // If using in a fragment
-        loginButton.setFragment(this);
-        // Other app specific specialization
-
-        info = (TextView)view.findViewById(R.id.info);
-        // Callback registration
-        loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
-            @Override
-            public void onSuccess(LoginResult loginResult) {
-                // App code
-                info.setText(
-                        "User ID: "
-                                + loginResult.getAccessToken().getUserId()
-                                + "\n" +
-                                "Auth Token: "
-                                + loginResult.getAccessToken().getToken()
-                );
-            }
-
-            @Override
-            public void onCancel() {
-
-                info.setText("Login attempt canceled.");            }
-
-            @Override
-            public void onError(FacebookException exception) {
-                info.setText(exception.getMessage());            }
-        });
 //        runningTask = false;
 //
 //        serverHost = (EditText) view.findViewById(R.id.serverHostEditText);
@@ -125,7 +76,7 @@ public class LoginFragment extends Fragment {
 
         signUp = (Button) view.findViewById(R.id.signUpButton);
         login = (Button) view.findViewById(R.id.loginButton);
-        //facebook = (Button) view.findViewById(R.id.facebookLoginButton);
+        facebook = (Button) view.findViewById(R.id.facebookLoginButton);
         google = (Button) view.findViewById(R.id.googleLoginButton);
 
         // create a text watcher to enable/disable the buttons
@@ -169,14 +120,14 @@ public class LoginFragment extends Fragment {
             }
         });
 
-/*        facebook.setOnClickListener(new View.OnClickListener() {
+        facebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (onLoginListener != null) {
                     onLoginListener.onLogin(OnLoginListener.LoginType.FACEBOOK);
                 }
             }
-        });*/
+        });
 
         google.setOnClickListener(new View.OnClickListener() {
             @Override

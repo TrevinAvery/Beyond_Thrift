@@ -6,10 +6,32 @@ package com.trevinavery.beyondthrift.model;
  */
 public class Location {
 
-    private String country;
+    private String type;
+    private String title;
+    private String street;
     private String city;
+    private String state;
+    private String zip;
     private String latitude;
     private String longitude;
+    private String phone;
+    private String hours;
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getHours() {
+        return hours;
+    }
+
+    public void setHours(String hours) {
+        this.hours = hours;
+    }
 
     /**
      * Constructs an Location object with no data.
@@ -19,41 +41,61 @@ public class Location {
     }
 
     /**
-     * Constructs an Location object with pre-entered data.
+     * Constructs a Location object with pre-entered data.
      *
-     * @param country
+     * @param state
      * @param city
      * @param latitude
      * @param longitude
      */
-    public Location(String country, String city, String latitude, String longitude) {
-        setCountry(country);
+    public Location(String type, String title, String street, String city, String state, String zip, String latitude, String longitude, String phone, String hours) {
+        setType(type);
+        setTitle(title);
+        setStreet(street);
         setCity(city);
+        setState(state);
+        setZip(zip);
         setLatitude(latitude);
         setLongitude(longitude);
+        setPhone(phone);
+        setHours(hours);
     }
 
     /**
-     * Constructs an Location object with pre-entered data.
+     * Constructs a Location object with pre-entered data.
      *
-     * @param country
+     * @param state
      * @param city
      * @param latitude
      * @param longitude
      */
-    public Location(String country, String city, double latitude, double longitude) {
-        setCountry(country);
+    public Location(String type, String title, String street, String city, String state, String zip, double latitude, double longitude, String phone, String hours) {
+        setType(type);
+        setTitle(title);
+        setStreet(street);
         setCity(city);
+        setState(state);
+        setZip(zip);
         setLatitude(latitude);
         setLongitude(longitude);
+        setPhone(phone);
+        setHours(hours);
     }
 
-    public String getCountry() {
-        return country;
+    public String getTitle() {
+        return title;
     }
 
-    public void setCountry(String country) {
-        this.country = country;
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
     }
 
     public String getCity() {
@@ -95,7 +137,7 @@ public class Location {
 
         Location location = (Location) o;
 
-        if (country != null ? !country.equals(location.country) : location.country != null)
+        if (state != null ? !state.equals(location.state) : location.state != null)
             return false;
         if (city != null ? !city.equals(location.city) : location.city != null) return false;
         if (latitude != null ? !latitude.equals(location.latitude) : location.latitude != null)
@@ -106,10 +148,38 @@ public class Location {
 
     @Override
     public int hashCode() {
-        int result = country != null ? country.hashCode() : 0;
+        int result = state != null ? state.hashCode() : 0;
         result = 31 * result + (city != null ? city.hashCode() : 0);
         result = 31 * result + (latitude != null ? latitude.hashCode() : 0);
         result = 31 * result + (longitude != null ? longitude.hashCode() : 0);
         return result;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setStreet(String street) {
+        this.street = street;
+    }
+
+    public void setZip(String zip) {
+        this.zip = zip;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getStreet() {
+        return street;
+    }
+
+    public String getZip() {
+        return zip;
+    }
+
+    public String getAddress() {
+        return street + "\n" + city + ", " + state + " " + zip;
     }
 }
