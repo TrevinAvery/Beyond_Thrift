@@ -55,7 +55,9 @@
         <item name="android:background">@drawable/rounded_button_facebook_blue</item>
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:layout_margin">20dp</item>
-        <item name="android:padding">20dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:textSize">14dp</item>
     </style>
 
     <style name="g_plus_button">
