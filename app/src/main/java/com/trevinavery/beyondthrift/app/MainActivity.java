@@ -65,6 +65,7 @@ public class MainActivity extends Activity {
 //                    ft.setCustomAnimations(0, R.animator.slide_out_down);
                     ft.replace(R.id.fragmentContainer, mainFragment);
                     ft.commit();
+                    mDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED);
                 }
             });
 
@@ -87,6 +88,7 @@ public class MainActivity extends Activity {
 
             mPlanetTitles = getResources().getStringArray(R.array.main_drawer_items);
             mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+            mDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
             mDrawerList = (ListView) findViewById(R.id.left_drawer);
 
             // Set the adapter for the list view
