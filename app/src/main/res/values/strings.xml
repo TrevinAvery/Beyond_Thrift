@@ -19,6 +19,13 @@
         <item>Settings</item>
     </string-array>
 
+    <!-- PromotionsFragment Strings -->
+    <string name="upcoming_discounts_header_string">Upcoming Discounts</string>
+    <string name="upcoming_discounts_string">&#8226; orem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed dolor justo. Morbi lobortis congue justo at convallis. Nam efficitur vel augue in venenatis \n
+         &#8226; In leo nulla, pretium nec pharetra nec, tincidunt sed massa.  \n
+        &#8226; Praesent blandit fermentum diam, vitae vestibulum purus fermentum sed.</string>
+    <string name="coupons_header_string">Coupons</string>
+    <string name="news_header_string">News</string>
     <!-- OnboardingFragment Strings -->
     <string name="onboarding_text">Make donations, provide service by picking up donations and find information about clothing drives all in one app</string>
     <string name="button_get_started">Get Started</string>

@@ -23,7 +23,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/home_address_string"
                 android:textColor="#000000"
-                android:textSize="18dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
                 android:layout_marginBottom="0dp"
                 />
             <TextView
@@ -76,6 +77,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/email_address_string"
                 android:textSize="18sp"
+                android:textColor="#000000"
                 android:textStyle="bold"
                 />
             <TextView
@@ -129,6 +131,7 @@
                 android:text="@string/email_receipts"
                 android:textSize="18sp"
                 android:textStyle="bold"
+                android:textColor="#000000"
                 />
             <TextView
                 android:layout_width="wrap_content"
@@ -175,6 +178,7 @@
                 android:text="@string/vehicle_capacity_string"
                 android:textSize="18sp"
                 android:textStyle="bold"
+                android:textColor="#000000"
                 />
             <TextView
                 android:layout_width="wrap_content"
@@ -220,6 +224,7 @@
                 android:text="@string/notifications_setting_string"
                 android:textSize="18sp"
                 android:textStyle="bold"
+                android:textColor="#000000"
                 />
             <TextView
                 android:layout_width="wrap_content"
@@ -268,6 +273,7 @@
                 android:text="@string/logout_text"
                 android:textSize="18sp"
                 android:textStyle="bold"
+                android:textColor="#000000"
                 />
             <TextView
                 android:layout_width="wrap_content"
