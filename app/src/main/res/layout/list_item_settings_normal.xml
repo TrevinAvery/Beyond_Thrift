@@ -89,7 +89,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/user_email_address"
+            android:id="@+id/id_user_email_address"
             android:text="@string/user_email_address"
             android:layout_alignParentRight="true"
             android:layout_width="fill_parent"
@@ -186,7 +186,7 @@
         </LinearLayout>
 
         <Spinner
-            android:id="@+id/map_type_spinner"
+            android:id="@+id/vehicle_type_spinner"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="right"

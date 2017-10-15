@@ -3,6 +3,11 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
         <!-- Customize your theme here. -->
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/blue_ripple</item>
     </style>
 
     <!-- label and input for login fragment -->
@@ -49,21 +54,31 @@
     <style name="facebook_button">
         <item name="android:background">@drawable/rounded_button_facebook_blue</item>
         <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:textSize">14dp</item>
     </style>
 
     <style name="g_plus_button">
         <item name="android:background">@drawable/rounded_button_g_plus_red</item>
         <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:padding">20dp</item>
     </style>
 
     <style name="blue_button">
         <item name="android:background">@drawable/rounded_button_blue</item>
         <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:padding">20dp</item>
     </style>
 
     <style name="yellow_button">
         <item name="android:background">@drawable/rounded_button_yellow</item>
         <item name="android:textColor">#000000</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:padding">20dp</item>
     </style>
     
 </resources>

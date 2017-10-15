@@ -331,7 +331,7 @@ public class FillService extends AbstractService {
                 person.getPersonID(),
                 Double.parseDouble(location.getLatitude()),
                 Double.parseDouble(location.getLongitude()),
-                location.getCountry(),
+                location.getState(),
                 location.getCity(),
                 type,
                 date

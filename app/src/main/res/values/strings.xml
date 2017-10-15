@@ -12,12 +12,23 @@
 
     <!-- Main Activity Strings -->
     <string-array name="main_drawer_items">
-        <item>Normal</item>
-        <item>Satellite</item>
-        <item>Terrain</item>
-        <item>Hybrid</item>
+        <item>News &amp; Events</item>
+        <item>Drop Off Locations</item>
+        <item>Schedule a Pick Up</item>
+        <item>View Items to Pick Up</item>
+        <item>Cash Donation</item>
+        <item>About Us</item>
+        <item>Settings</item>
     </string-array>
 
+    <!-- PromotionsFragment Strings -->
+    <string name="upcoming_discounts_header_string">50% Off Saturday Sale</string>
+    <string name="upcoming_discounts_subheader">West Valley and Orem Stores Every Saturday</string>
+    <string name="upcoming_discounts_string">Sale includes: Clothing, linens and shoes.
+        \nExcludes: Current and white tags, furniture, jewelry and hard goods. </string>
+    <string name="coupons_header_string">Coupons</string>
+    <string name="news_header_string">Check Out our New Mobile App</string>
+    <string name="news_string">Make donations, schedule pickups, locate stores and bins, and find events and promotions from our mobile app!</string>
     <!-- OnboardingFragment Strings -->
     <string name="onboarding_text">Make donations, provide service by picking up donations and find information about clothing drives all in one app</string>
     <string name="button_get_started">Get Started</string>
@@ -133,6 +144,11 @@
     <string name="icon_expand_list">Expand List Icon</string>
     <string name="icon_gender">Gender Icon</string>
     <string name="icon_gender_or_map">Gender or Map Icon</string>
+
+    <!-- facebook -->
+    <string name="facebook_app_id">133551727370732</string>
+    <string name="fb_login_protocol_scheme">fb133551727370732</string>
+
 
 
 </resources>

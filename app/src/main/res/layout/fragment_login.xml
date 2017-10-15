@@ -10,6 +10,7 @@
         android:id="@+id/signUpButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/blue_button"
         android:layout_gravity="center"
         android:text="Sign Up"/>
 
@@ -17,6 +18,7 @@
         android:id="@+id/loginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/yellow_button"
         android:layout_gravity="center"
         android:text="Login"/>
 
@@ -43,18 +45,29 @@
             android:layout_gravity="center"
             android:background="@android:color/darker_gray"/>
     </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="18sp"
+        />
 
-    <Button
+    <com.facebook.login.widget.LoginButton
         android:id="@+id/facebookLoginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Sign Up with Facebook"/>
+        style="@style/facebook_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />
 
     <Button
         android:id="@+id/googleLoginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/g_plus_button"
         android:layout_gravity="center"
         android:text="Sign Up with Google"/>
 

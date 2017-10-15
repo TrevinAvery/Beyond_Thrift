@@ -4,8 +4,10 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -48,7 +50,7 @@ public class MainActivity extends Activity {
                     // user has logged in, switch to map fragment
                     FragmentTransaction ft = getFragmentManager().beginTransaction();
 
-//                    ft.setCustomAnimations(0, R.animator.slide_out_down);
+                    ft.setCustomAnimations(0, R.animator.slide_out_down);
                     ft.replace(R.id.fragmentContainer, loginFragment);
                     ft.commit();
                 }
@@ -61,13 +63,15 @@ public class MainActivity extends Activity {
                     // user has logged in, switch to map fragment
                     FragmentTransaction ft = getFragmentManager().beginTransaction();
 
-//                    ft.setCustomAnimations(0, R.animator.slide_out_down);
-                    ft.replace(R.id.fragmentContainer, mainFragment);
+                    ft.setCustomAnimations(0, R.animator.slide_out_down);
+                    ft.replace(R.id.fragmentContainer, new PromotionsFragment());
                     ft.commit();
+                    mDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED);
+                    mDrawerLayout.openDrawer(Gravity.START);
                 }
             });
 
-            mainFragment = new MainFragment();
+//            mainFragment = new MainFragment();
 
 
 
@@ -86,6 +90,7 @@ public class MainActivity extends Activity {
 
             mPlanetTitles = getResources().getStringArray(R.array.main_drawer_items);
             mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+            mDrawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
             mDrawerList = (ListView) findViewById(R.id.left_drawer);
 
             // Set the adapter for the list view
@@ -107,37 +112,55 @@ public class MainActivity extends Activity {
     /** Swaps fragments in the main content view */
     private void selectItem(int position) {
         // Create a new fragment and specify the planet to show based on position
-        Fragment fragment;
+        Fragment fragment = null;
+        Intent intent = null;
 
         switch (position) {
             case 0:
-                fragment = new MyMapFragment();
+                fragment = new PromotionsFragment();
                 break;
             case 1:
-                fragment = new LoginFragment();
+                fragment = new MyMapFragment();
+                break;
+            case 2:
+                fragment = new DonateFragment();
+                break;
+            case 3:
+                fragment = new DonatedItemsFragment();
+                break;
+            case 5:
+                fragment = onboardingFragment;
+                break;
+            case 6:
+                intent = new Intent(this, SettingsActivity.class);
                 break;
             default:
                 fragment = new MainFragment();
                 break;
         }
 
-        // Insert the fragment by replacing any existing fragment
-        FragmentManager fragmentManager = getFragmentManager();
-        fragmentManager.beginTransaction()
-                .replace(R.id.fragmentContainer, fragment)
-                .commit();
+        if (intent != null) {
+            this.startActivity(intent);
+        } else if (fragment != null) {
 
-        // Highlight the selected item, update the title, and close the drawer
-        mDrawerList.setItemChecked(position, true);
-        setTitle(mPlanetTitles[position]);
-        mDrawerLayout.closeDrawer(mDrawerList);
+            // Insert the fragment by replacing any existing fragment
+            FragmentManager fragmentManager = getFragmentManager();
+            fragmentManager.beginTransaction()
+                    .replace(R.id.fragmentContainer, fragment)
+                    .commit();
+
+            // Highlight the selected item, update the title, and close the drawer
+            mDrawerList.setItemChecked(position, true);
+            setTitle(mPlanetTitles[position]);
+            mDrawerLayout.closeDrawer(mDrawerList);
+        }
     }
 
     @Override
     public void setTitle(CharSequence title) {
 //        mTitle = title;
 //        getActionBar().setTitle(mTitle);
-        getActionBar().setTitle(title);
+//        getActionBar().setTitle(title);
     }
 
 }
